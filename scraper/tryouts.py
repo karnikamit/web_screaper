@@ -3,10 +3,12 @@ __author__ = "karnikamit"
 import requests
 from lxml import html
 
-URL = 'http://econpy.pythonanywhere.com/ex/001.html'
+URL = 'http://www.espncricinfo.com/ci/engine/match/index.html'
 page = requests.get(URL)
 tree = html.fromstring(page.content)
-buyers = tree.xpath('//div[@title="buyer-name"]/text()')
-prices = tree.xpath('//span[@class="item-price"]/text()')
-print 'buyers', buyers
-print 'prices', prices
+c1 = tree.xpath('//div[@class="innings-info-1"]/text()')[0]
+c2 = tree.xpath('//div[@class="innings-info-2"]/text()')[0]
+s1 = tree.xpath('//span[@class="bold"]/text()')[1]
+s2 = tree.xpath('//span[@class="bold"]/text()')[2]
+print c1, s1
+print c2, s2
