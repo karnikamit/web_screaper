@@ -1,4 +1,4 @@
-# First Try to scrape a website
+# First Try to scrap a website
 
 
 How to Build & Run
