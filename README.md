@@ -1,7 +1,8 @@
-First Try to scrape a website
------------------------------
+# First Try to scrape a website
 
-# How to Build & Run
+
+How to Build & Run
+------------------
 
     ::
     
@@ -12,7 +13,8 @@ First Try to scrape a website
         (venv)$ cd scraper
         (venv)$ python tryouts.py
 
-# tryouts.py
+tryouts.py
+----------
 
     This is a simple script to get the cricket scores from a website.
     
